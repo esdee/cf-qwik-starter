@@ -29,7 +29,7 @@ type Bindings = {
 
 const app = new Hono<{ Bindings: Bindings }>();
 
-app.get('/', async (ctx) => {
+app.get('/', (ctx) => {
 	return ctx.json({ message: ' Hello World' });
 });
 
