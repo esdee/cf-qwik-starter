@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "build": "tsc --noEmit",
+    "check": "pnpm run lint && pnpm run build",
     "deploy": "wrangler deploy",
     "dev": "wrangler dev --port 8787",
     "lint": "eslint . --ext .ts",
